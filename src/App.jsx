@@ -57,10 +57,11 @@
 
 // import React from "react";
 
-// export default class App extends React.Component {
+// export default function App() {
 //   state = {
 //     count: 0
 //   };
+// export default class App extends React.Component {
 //   add = () => {
 //     this.setState(prevCount => {
 //       return {
@@ -95,10 +96,11 @@
 
 // import React from "react"
 
-// export default class App extends React.Component {
+// export default function App() {
 //   // state = {
 //   //     goOut: "Yes"
 //   // }
+// export default class App extends React.Component {
 //   constructor(props) {
 //     super(props)
 //     this.state = {
@@ -139,10 +141,11 @@
 
 // import React from "react";
 
-// export default class App extends React.Component {
+// export default function App() {
 //   // state = {
 //   //     count: 0
 //   // }
+// export default class App extends React.Component {
 //   constructor() {
 //     super();
 //     this.state = {
@@ -183,44 +186,82 @@
 
 import React from "react"
 
-export default function App() {
-    const [contact, setContact] = React.useState({
-        firstName: "John",
-        lastName: "Doe",
-        phone: "+1 (719) 555-1212",
-        email: "itsmyrealname@example.com",
-        isFavorite: false
-    })
+// export default function App() {
+    // const [contact, setContact] = React.useState({
+    //     firstName: "John",
+    //     lastName: "Doe",
+    //     phone: "+1 (719) 555-1212",
+    //     email: "itsmyrealname@example.com",
+    //     isFavorite: false
+    // })
+    // let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
     
-    let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png"
+    // function toggleFavorite() {
+    //     setContact(prevContact => ({
+    //         ...prevContact,
+    //         isFavorite: !prevContact.isFavorite
+    //     }))
+    // }
     
-    function toggleFavorite() {
-        setContact(prevContact => ({
-            ...prevContact,
-            isFavorite: !prevContact.isFavorite
-        }))
-    }
-    
-    return (
-        <main>
-            <article className="card">
-                <img src="./images/user.png" className="card--image" />
-                <div className="card--info">
-                    <img 
-                        src={`../images/${starIcon}`} 
-                        className="card--favorite"
-                        onClick={toggleFavorite}
-                    />
-                    <h2 className="card--name">
-                        {contact.firstName} {contact.lastName}
-                    </h2>
-                    <p className="card--contact">{contact.phone}</p>
-                    <p className="card--contact">{contact.email}</p>
-                </div>
+    // return (
+    //     <main>
+    //         <article className="card">
+    //             <img src="./images/user.png" className="card--image" />
+    //             <div className="card--info">
+    //                 <img 
+    //                     src={`../images/${starIcon}`} 
+    //                     className="card--favorite"
+    //                     onClick={toggleFavorite}
+    //                 />
+    //                 <h2 className="card--name">
+    //                     {contact.firstName} {contact.lastName}
+    //                 </h2>
+    //                 <p className="card--contact">{contact.phone}</p>
+    //                 <p className="card--contact">{contact.email}</p>
+    //             </div>
                 
-            </article>
-        </main>
-    )
-}
+    //         </article>
+    //     </main>
+    // )
+// }
+
+// import userImage from "../src/images/user.png";
+// import starFilled from "../src/images/star-filled.png";
+// import starEmpty from "../src/images/star-empty.png";
+
+// export default class App extends React.Component {
+//   state = {
+//     firstName: "John",
+//     lastName: "Trajano",
+//     phone: "+63 955 048 5313",
+//     email: "enjeytee@gmail.com",
+//     isFavorite: false
+//   }
+//   toggleFavorite = () => {
+//     this.setState(prevState => ({ isFavorite: !prevState.isFavorite }))
+//   }
+//   render() { 
+//     let starIcon = this.state.isFavorite ? starFilled : starEmpty
+//     return (
+//       <main>
+//         <article className="card">
+//           <img src={userImage} className="card--image" />
+//           <div className="card--info">
+//               <img 
+//                   src={starIcon} 
+//                   className="card--favorite"
+//                   onClick={this.toggleFavorite}
+//               />
+//               <h2 className="card--name">
+//                   {this.state.firstName} {this.state.lastName}
+//               </h2>
+//               <p className="card--contact">{this.state.phone}</p>
+//               <p className="card--contact">{this.state.email}</p>
+//           </div>
+//         </article>
+//       </main>
+//     )
+//   }
+// }
 
 // FIFTH LESSON - UPDATING COMPLEX STATE WITH this.setState() //

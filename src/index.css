@@ -216,7 +216,7 @@ body {
 
 /*** FIFTH LESSON - UPDATING COMPLEX STATE WITH this.setState() ***/
 
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -267,6 +267,6 @@ main {
   font-size: 0.75rem;
   color: gray;
   margin-block: 7px;
-}
+} */
 
 /*** END OF FIFTH LESSON - UPDATING COMPLEX STATE WITH this.setState() ***/
